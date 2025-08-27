@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>PC-Konfigurator – SilverBuild</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>SilverBuild</h1>
+    <nav>
+        <a href="index.html">Start</a>
+        <a href="shop.html">Shop</a>
+        <a href="konfigurator.html">PC-Konfigurator</a>
+        <a href="faq.html">FAQ</a>
+        <a href="bewertungen.html">Bewertungen</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Deinen Wunsch-PC zusammenstellen</h2>
+    <p>Fülle das Formular aus – wir melden uns mit einem passenden Angebot per E-Mail.</p>
+
+    <form action="mailto:deine@email.de" method="POST" enctype="text/plain">
+        <label for="email">Deine E-Mail:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="budget">Dein Budget (in €):</label>
+        <input type="text" id="budget" name="budget" placeholder="z.B. 1200€" required>
+
+        <label for="zweck">Wofür brauchst du den PC?</label>
+        <select id="zweck" name="zweck">
+            <option value="Gaming">Gaming</option>
+            <option value="Office">Office / Alltag</option>
+            <option value="ContentCreation">Videoschnitt / Grafik</option>
+            <option value="Server">Server / Spezial</option>
+            <option value="Sonstiges">Sonstiges</option>
+        </select>
+
+        <label for="wünsche">Weitere Wünsche:</label>
+        <textarea id="wünsche" name="wünsche" rows="5" placeholder="RGB, Wasserkühlung, leise Lüfter, ..."></textarea>
+
+        <input type="submit" value="Absenden">
+    </form>
+</main>
+
+<footer>
+    &copy; 2025 SilverBuild
+</footer>
+
+</body>
+</html>
